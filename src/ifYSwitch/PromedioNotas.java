@@ -6,6 +6,8 @@
 
 package ifYSwitch;
 
+import java.util.Scanner;
+
 /**
 jercicio 21
 Calcula la nota de un trimestre de la asignatura Programación. El programa
@@ -33,5 +35,25 @@ Nota del segundo control: 3
 Tu nota de Programación es 4.5
  */
 public class PromedioNotas {
+    public static void main(String[] args) {
+        System.out.println("Ingrese las notas del trimestre de programacion");
+        Scanner sc=new Scanner(System.in);
+        double promedio=0;
+        System.out.println("Ingrese la primera nota");
+        double nota1=sc.nextDouble();
+        System.out.println("Ingrese la segunda nota");
+        double nota2=sc.nextDouble();
+        promedio=(nota1+nota2)/2;
+        if (promedio>=5) {
+            System.out.println("Esta aprobado con un promedio de > "+promedio);
+        }if (promedio<5) {
+            System.out.println("Cual es el resultado de la recuperacion (apto/no apto)");
+            String recuperatorio=sc.next();
+            if (recuperatorio.equals("apto")) {
+                System.out.println("Tu nota es de 5");            
+        }else{System.out.println(promedio);}
+        }
+
+    }
 
 }
