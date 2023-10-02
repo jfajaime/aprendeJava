@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package salidaPorPantalla9Ejercicios;
 
 public class Prueba {
+
     public static void main(String[] args) {
         System.out.print("\033[33m mandarina");
         System.out.print("\033[32m hirba");
@@ -16,7 +16,7 @@ public class Prueba {
         System.out.print("\033[35m nazareno");
         System.out.print("\033[34m mar");
         System.out.println("");
-        
+
         System.out.println("┌────────┬───────────┬────────┬────────────────┐");
         System.out.println("│ Código │ Color │ Código │ Color │");
         System.out.println("├────────┼───────────┼────────┼────────────────┤");
@@ -51,9 +51,6 @@ public class Prueba {
         System.out.printf("%-10s %8.2f %6d\n", "peras", 2.75, 120);
         System.out.printf("%-10s %8.2f %6d\n", "aguacates", 10.0, 6);
         System.out.println("-------------------------------------------");
-        
-
-
 
     }
 
