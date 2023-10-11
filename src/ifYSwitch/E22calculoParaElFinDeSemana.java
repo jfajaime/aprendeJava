@@ -22,8 +22,38 @@ public class E22calculoParaElFinDeSemana {
         System.out.println("ingrese dia de la (lunes a viernes) semana para calcular cuanto falta para el finde!!!");
         Scanner sc=new Scanner(System.in);
         String dia=sc.next();
-        System.out.println(" Ingrese la hora para el calculo!!!");
-        double hora=sc.nextDouble();
-
+                
+        int diaNum=0;
+        
+        switch(dia){
+            case "lunes":
+                diaNum=0;
+                break;
+            case "martes":
+                diaNum=1;
+                break;
+            case "miercoles":
+                diaNum=2;
+                break;
+            case "jueves":
+                diaNum=3;
+                break;
+            case "viernes":
+                diaNum=4;
+                break;
+            default:
+                System.out.println("dia introducido incorrecto");
+        
+        }
+        System.out.println("ingrese la hora y los minutos");
+        System.out.println("horas>");
+        int horas=sc.nextInt();
+        System.out.println("ahora los minutos por favor");
+        int min=sc.nextInt();
+        
+        int minTotales=(4*24*60)+(15*60);
+        int minactuales=(diaNum*24*60)+(horas*60)+min;
+        System.out.println("faltan "+(minTotales-minactuales)+" minutos para llegar al fin de semana");
+        
     }
 }
